@@ -22,7 +22,7 @@ Este é um programa simples para baixar vídeos do YouTube usando `yt-dlp` e uma
 
     ```git clone https://github.com/Michel-Momose/youtube_downloader```
 
-   ```cd YouTube-Downloader ```
+    ```cd YouTube-Downloader ```
 
 2. **Crie e ative um ambiente virtual (opcional, mas recomendado):**
 
