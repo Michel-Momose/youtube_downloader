@@ -10,7 +10,7 @@ Este é um programa simples para baixar vídeos do YouTube usando `yt-dlp` e uma
 
 ## 📋Requisitos
 
-- [Python 3.6 ou superior](https://www.python.org/downloads/)
+- [Python 3.12 ou superior](https://www.python.org/downloads/)
 - Bibliotecas Python:
   - `tkinter`
   - `yt-dlp`
