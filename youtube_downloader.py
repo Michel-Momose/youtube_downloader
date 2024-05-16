@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox, filedialog
-from pytube import YouTube
+import yt_dlp
 
 def download_video():
     url = url_entry.get()
@@ -15,10 +15,16 @@ def download_video():
         messagebox.showerror("Erro", "Por favor, selecione um caminho para salvar.")
         return
     
+    ydl_opts = {
+        'format': 'best',
+        'outtmpl': f'{save_path}/%(title)s.%(ext)s',
+        'noplaylist': True,  # Baixar apenas o vídeo e não a playlist
+        'age_limit': 100,  # Tentar contornar restrições de idade
+    }
+
     try:
-        yt = YouTube(url)
-        stream = yt.streams.get_highest_resolution()
-        stream.download(output_path=save_path)
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            ydl.download([url])
         messagebox.showinfo("Sucesso", f"Download concluído! Vídeo salvo em: {save_path}")
     except Exception as e:
         messagebox.showerror("Erro", f"Ocorreu um erro: {e}")
