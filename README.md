@@ -1,21 +1,21 @@
-# YouTube Downloader
+# ✨YouTube Downloader
 
 Este é um programa simples para baixar vídeos do YouTube usando `yt-dlp` e uma interface gráfica desenvolvida em Tkinter. Ele permite que os usuários baixem vídeos, incluindo aqueles com restrição de idade, sem necessidade de autenticação.
 
-## Funcionalidades
+## 🦑Funcionalidades
 
 - Baixar vídeos do YouTube em alta resolução.
 - Interface gráfica amigável para inserir a URL do vídeo e selecionar o local para salvar.
 - Contorna restrições de idade sem necessidade de login.
 
-## Requisitos
+## 📋Requisitos
 
 - Python 3.6 ou superior
 - Bibliotecas Python:
   - `tkinter`
   - `yt-dlp`
 
-## Instalação
+## 💻Instalação
 
 1. **Clone o repositório:**
 
@@ -39,7 +39,7 @@ Este é um programa simples para baixar vídeos do YouTube usando `yt-dlp` e uma
 
     ```pip install -r requirements.txt```
 
-## Uso
+## ☕ Uso
 
 ### Executando o Script Python
 
