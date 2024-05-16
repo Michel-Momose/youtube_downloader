@@ -1,5 +1,6 @@
 from pytube import YouTube
 
+
 def download_youtube_video(url, save_path):
     try:
         # Cria um objeto YouTube
