@@ -10,7 +10,7 @@ Este é um programa simples para baixar vídeos do YouTube usando `yt-dlp` e uma
 
 ## 📋Requisitos
 
-- Python 3.6 ou superior
+- [Python 3.6 ou superior](https://www.python.org/downloads/)
 - Bibliotecas Python:
   - `tkinter`
   - `yt-dlp`
@@ -29,12 +29,13 @@ Este é um programa simples para baixar vídeos do YouTube usando `yt-dlp` e uma
 
     ```python -m venv venv```
 
-    ```source venv/bin/activate```   
+    ```source venv/bin/activate```
+    
     No Windows, use:
 
     ``` venv\Scripts\activate```
 
-3. **Instale as dependências:**
+4. **Instale as dependências:**
 
 
     ```pip install -r requirements.txt```
